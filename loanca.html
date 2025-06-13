@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="loanca.css">
+</head>
+<body>
+    <div class="whole-container">
+        <h3>Loan Calculator</h3>
+        <p>Loan Amount $: 
+            <input onchange="calculateLoan()" type="number" class="input" id="loan-amt" min="100" max="50000000" value="">
+        </p>
+        <p>Interest Rate %:
+            <input onchange="calculateLoan()" type="number" class="input" id="interest-rate" min="0" max="100" value="">
+        </p>
+        <p>Months left to pay:
+            <input onchange="calculateLoan()" type="number" class="input" id="left-months" min="4" max="45" value="">
+        </p>
+        <p  id="payment"class="payment">Monthly payment:</p>
+    </div>
+    <script src="loanca.js"></script>
+</body>
+</html>
